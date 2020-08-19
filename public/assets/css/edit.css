@@ -1,0 +1,121 @@
+.option5 .group-button-header .btn-cart .mycart{
+	background: #669900;
+	width: auto;
+	border-radius: 10px;
+	position: relative;
+	height: 39px;
+}
+.option5 .group-button-header .btn-cart .mycart small.cart1{
+	line-height: 39px;
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-left: 12px;
+}
+.option5 .group-button-header .btn-cart .mycart > a > img{
+	margin-top: 7px;
+}
+.option5 .group-button-header .btn-cart .mycart small.qty{
+	line-height: 39px;
+	font-size: 14px;
+	color: #ffffff;
+	margin-right: 12px;
+	margin-left: 10px;
+}
+.option5 .group-button-header .btn-cart-width{
+	width: 120px !important;
+}
+.option5 .group-button-header .cart{
+	position: absolute;
+	top: 7px;
+	font-weight: 500;
+	font-size: 16px;
+	left: 41px;
+}
+.option5 .group-button-header .btn-cart div.mycart{
+	width: auto;
+	background: #669900;
+	border-radius: 10px;
+	position: relative;
+}
+.option5 .group-button-header .quantity{
+	position: absolute;
+	top: 7px;
+	left: 112px;
+	font-size: 10px;
+    border-radius: 50%;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.view-all{
+	margin: 15px 0;
+}
+.view-all > a{
+	color: #a90f0f;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+}
+.info-tt {
+   color: #669900; 
+   font-size: 15px; 
+   font-weight: bold;
+}
+.product-onsale .product-list .owl-controls{
+	display: none;
+}
+.breadcrumb a{
+	color: #000000 !important;
+}
+/*----PRODUCT---*/
+.tree-menu li>a,
+.tree-menu li>span:before
+{
+	color: #000000;
+}
+.tree-menu li:hover>a,
+.tree-menu li:hover>span:before,{
+  color: #ffffff;
+}
+.tree-menu li:hover{
+  background: #669900;
+}
+
+.tree-menu li.active>a,
+.tree-menu li.active>span:before{
+	color: red !important;
+}
+/* ------ Contact ------- */
+.form-selector input.input-sm{
+	border: 1px solid #cfd0d0 !important;
+	border-radius: 3px !important;
+}
+.form-selector textarea.input-sm{
+	border: 1px solid #cfd0d0 !important;
+	border-radius: 3px !important;
+}
+.form-selector input.input-sm:hover,
+.form-selector input.input-sm:focus{
+	border: 1px solid #ed2227 !important;
+}
+.form-selector textarea.input-sm:hover,
+.form-selector textarea.input-sm:focus{
+	border: 1px solid #ed2227 !important;
+}
+.group-title-control{
+	display: block;
+	font-weight: bold;
+	padding: 6px 0px;
+}
+.form-selector .btn-send{
+	background: #ed2227 !important;
+	border-radius: 5px !important;
+}
+.option5 .show-brand .navbar-brand{
+	width: auto !important;
+}
+
+
+
+

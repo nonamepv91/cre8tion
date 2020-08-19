@@ -1,0 +1,67 @@
+@extends('admin.master')
+@section('content')
+  <!-- Title area -->
+  @include('admin.cate.header')
+  <!-- Message -->
+  <!-- Main content wrapper -->
+ <div class="wrapper">
+  <!-- Form -->
+  <form class="form" id="form" action="{{route('cate.postedit',$cate->id)}}" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="_token" value="{{csrf_token()}}">
+    <fieldset>
+    <div class="widget">
+      <div class="title btitle"> <img src="admin_assets/images/icons/dark/add.png" class="titleIcon" />
+        <h6>Thêm mới</h6>
+      </div>
+      <ul class="tabs">
+        <li><a href="#tab1">Thông tin chung</a></li>
+      </ul>
+      <div class="tab_container">
+        <div id='tab1' class="tab_content pd0">
+          <div class="formRow">
+            <label class="formLeft ntitle" for="param_name">Tên:</label>
+            <div class="formRight"> <span class="oneTwo">
+              <input name="txtName" id="param_name" type="text" placeholder="Please Enter Product Name" value="{!! old('txtName'), isset($cate) ? $cate->name : null !!}" />
+              </span>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="formRow">
+            <label class="formLeft ntitle" for="param_name">Từ khóa:</label>
+            <div class="formRight"> <span class="oneTwo">
+              <input name="txtKeyword" id="param_name" type="text" placeholder="Please Enter Keyword" value="{!! old('txtKeyword'), isset($cate) ? $cate->keyword : null !!}" />
+              </span>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="formRow">
+            <label class="formLeft ntitle" for="param_name">Mô tả:</label>
+            <div class="formRight"> <span class="oneTwo">
+              <input name="txtDescription" id="param_name" type="text" placeholder="Please Enter Description" value="{!! old('txtDescription'), isset($cate) ? $cate->description : null !!}" />
+              </span>
+            </div>
+            <div class="clear"></div>
+          </div>
+           <div class="formRow">
+            <label class="formLeft ntitle" for="param_name">Thứ tự:</label>
+            <div class="formRight"> <span class="oneTwo">
+              <input name="txtSort" id="param_name" type="text" placeholder="Please Enter Sort_order" value="{!! old('txtSort'), isset($cate) ? $cate->sort_order : null !!}" />
+              </span>
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+         
+      </div>
+      <!-- End tab_container-->
+      <div class="formSubmit">
+        <input type="submit" value="Lưu" class="redB" />
+        <input type="reset" value="Hủy bỏ" class="basic" />
+      </div>
+      <div class="clear"></div>
+    </div>
+    </fieldset>
+  </form>
+</div>
+  <div class="clear mt30"></div>
+@endsection

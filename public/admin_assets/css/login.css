@@ -1,0 +1,72 @@
+.login{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(../../admin_asset/images/bg.jpg);
+	background-size: cover;
+}
+.login-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.8);
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 5px;
+}
+.login-box h2{
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+.login-box .login-inputbox{
+	position: relative;
+}
+.login-box .login-inputbox input{
+	width: 100%;
+	padding: 10px 10px 0 0;
+	font-size: 16px;
+	margin-bottom: 30px;
+	color: #fff;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+}
+.login-box .login-inputbox label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+	color: #fff;
+	padding: 10px 0;
+	pointer-events: none;
+	transition: .5s;
+}
+.login-box .login-inputbox input:focus ~ label,
+.login-box .login-inputbox input:valid ~ label{
+	top: -28px;
+	left: 0;
+	font-size: 14px;
+	color: #03a9f4;
+}
+.login-box button{
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	background: transparent;
+	background: #03a9f4;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.title_list td{
+	font-weight: bold;
+    color: #000;
+    font-size: 12px;
+}
+
